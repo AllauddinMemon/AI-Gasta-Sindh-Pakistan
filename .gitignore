@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Environment
+.env
+.env.local
+.env.*.local
+server/.env
+client/.env.local
+
+# Next.js
+client/.next/
+client/out/
+client/build/
+
+# Production
+dist/
+build/
+
+# Prisma
+database/prisma/migrations/dev.db
+*.sqlite
+
+# Uploads (local storage driver)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+.DS_Store
+.vscode/
+.idea/
+coverage/
+*.pem

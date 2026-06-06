@@ -1,0 +1,40 @@
+{
+  "name": "gasta-ai-server",
+  "version": "1.0.0",
+  "description": "GASTA AI backend \u2014 Express REST API for teachers' claim management with an AI assistant.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "prisma:generate": "prisma generate --schema=../database/prisma/schema.prisma",
+    "prisma:migrate": "prisma migrate dev --schema=../database/prisma/schema.prisma",
+    "prisma:deploy": "prisma migrate deploy --schema=../database/prisma/schema.prisma",
+    "prisma:studio": "prisma studio --schema=../database/prisma/schema.prisma",
+    "prisma:seed": "node ../database/seed.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "prisma": {
+    "schema": "../database/prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.56.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "prisma": "^5.18.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}

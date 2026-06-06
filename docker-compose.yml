@@ -1,0 +1,17 @@
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: gasta_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: gasta
+      POSTGRES_PASSWORD: gasta_password
+      POSTGRES_DB: gasta_ai
+    ports:
+      - "5432:5432"
+    volumes:
+      - gasta_pgdata:/var/lib/postgresql/data
+
+volumes:
+  gasta_pgdata:
