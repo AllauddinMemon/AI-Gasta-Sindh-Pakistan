@@ -1,7 +1,7 @@
-# GASTA AI — Government Secondary Teachers' Association System
+# GSTA AI — Government Secondary Teachers' Association System
 
 A full-stack platform where government secondary-school teachers register, file welfare
-claims (medical, housing, scholarship, sun-quota, emergency), upload supporting documents,
+claims (medical, housing, scholarship, son-quota, emergency), upload supporting documents,
 and track each claim from **Pending → Approved/Rejected**. An AI assistant guides teachers
 through the process and tells them which documents each claim needs.
 
